@@ -1,0 +1,133 @@
+@media(min-width:992px) {
+
+    html {
+        scroll-padding-top: 64px;
+    }
+
+
+    .section-title {
+        font-size: 3.6rem;
+    }
+
+    .section {
+        padding: 10em 1em;
+    }
+
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .nav {
+
+        &__menu {
+            .logo {
+                font-size: 2rem;
+            }
+
+            .nav-desktop {
+
+                .menu-link {
+                    padding: 1em .8em;
+                    font-size: 2rem;
+                }
+
+                .icon {
+                    margin-left: 5em;
+
+                    img {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+        &__image {
+            width: 50%;
+            height: 100vh;
+            background-image: url(../../dist/img/header-img-hq.jpg);
+        }
+
+        &__text {
+
+            h1 {
+                font-size: 6rem;
+            }
+
+            .text {
+                font-size: 3rem;
+            }
+
+        }
+    }
+
+
+    .about-me {
+
+        .about-me-description {
+            width: 60%;
+        }
+
+        .text {
+            font-size: 1.6rem;
+            padding-right: 4em;
+        }
+
+        .about-me-img {
+            i {
+                font-size: 25rem;
+            }
+        }
+
+        .box-three {
+
+            .data {
+                font-size: 1.6rem;
+            }
+        }
+
+        .box-four {
+
+            .title-text {
+                font-size: 1.7rem;
+            }
+
+            .gray-text {
+                a {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .projects {
+        padding: 10em 0;
+
+        .cards {
+
+            .card-body {
+                padding: 0 6em;
+
+                .btn-project {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+
+    .technology {
+
+        .cards {
+            padding: 4em 0;
+        }
+
+    }
+}

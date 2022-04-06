@@ -1,0 +1,218 @@
+@media(min-width:768px) {
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 58px;
+    }
+
+    .section {
+        padding: 7em 1em;
+    }
+
+    .section-title {
+        font-size: 3.4rem;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 2px solid #000;
+        z-index: 1000;
+
+        &__menu {
+            @include dFlexJcsbAic;
+
+            .logo {
+                padding-left: .5em;
+                display: block;
+                font-size: 1.8rem;
+                font-weight: bold;
+                transition: transform .2s linear;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+                i {
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            .nav-mobile {
+                display: none;
+            }
+
+            .btn-menu {
+                display: none;
+            }
+
+            .nav-desktop {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .menu-link {
+                    padding: 1em .7em;
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                    color: #000;
+                    transition: color .3s linear, background-color .3s linear;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: $mainColor;
+                    }
+                }
+
+                .active {
+                    color: #fff;
+                    background-color: #000;
+                }
+
+                .icon {
+                    margin-left: 3em;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        transform: scale(1);
+                        transition: transform .2s;
+
+                        &:hover {
+                            transform: scale(1.15);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .header {
+
+        &__text {
+
+            h1 {
+                font-size: 5.2rem;
+            }
+
+            .text {
+                font-size: 2.6rem;
+            }
+
+        }
+    }
+
+    .about-me {
+
+        .box {
+            @include dFlexJccAic;
+            padding: 8em 0;
+            width: 100%;
+        }
+
+        .about-me-description {
+            width: 50%;
+        }
+
+        .text {
+            padding: .5em 0;
+            padding-right: 2em;
+            font-size: 1.5rem;
+            line-height: 180%;
+
+            a {
+                font-weight: bold;
+                color: #000;
+            }
+        }
+
+        .about-me-img {
+            padding: 4em 0;
+            padding-left: 2em;
+            width: 50%;
+        }
+
+        .box-two {
+            flex-direction: row;
+            width: 100%;
+
+            .box-item {
+                width: 50%;
+            }
+        }
+
+
+        .box-three {
+            @include dFlexJcsbAic;
+        }
+
+        .box-four {
+            flex-direction: row;
+            width: 100%;
+
+            .box-item {
+                width: 50%;
+            }
+
+            .title-text {
+                font-size: 1.6rem;
+            }
+
+            .gray-text {
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+    }
+
+    .projects {
+        padding: 7em 0;
+
+        .cards {
+
+            .card {
+                flex-direction: row;
+                padding: 5em 0;
+
+                img {
+                    width: 70%;
+                }
+            }
+
+            .two,
+            .four {
+                flex-direction: row-reverse;
+            }
+
+            .card-body {
+                padding: 0 3em;
+
+                .text {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+
+    .technology {
+
+        .cards {
+            padding: 2em 0;
+        }
+
+    }
+
+
+}

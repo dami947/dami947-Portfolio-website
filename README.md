@@ -24,4 +24,4 @@ webdesign: https://github.com/dami947
 
 ## Demo
 
-live demo: https://dami947.github.io/dami947-Portfolio-website/
+live demo: https://damiankolasa.pl/
